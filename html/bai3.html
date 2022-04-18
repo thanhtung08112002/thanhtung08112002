@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            margin: auto;
+        }
+        .group_form{
+            margin: 10px;
+        }
+        input:hover{
+            border: 1px solid aqua;
+        }
+        .button{
+            margin-top: 20px;
+        margin-left: 60px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: rgb(0, 55, 255);
+            cursor: pointer;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: rgb(0, 85, 255);
+        }
+        input{
+            outline: none;
+        }
+        .invalid .error_mess{
+            color: red;
+        }
+        .invalid input{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" onsubmit="return form()">
+        <div class="group_form">
+            <h2>Đăng ký khóa học online</h2>
+        </div>
+        <div class="group_form">
+            <label for="">Họ tên</label>
+            <input type="text" id="username" placeholder="Họ tên">
+            <div class="error_mess"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Điện thoại</label>
+            <input type="text" id="phonenumber" placeholder="Điện thoại">
+            <div class="error_mess"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Mật khẩu</label>
+            <input type="password" id="pass" placeholder="Mật khẩu">
+            <div class="error_mess"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Chọn khóa học</label>
+            <select name="" id="choose">
+                <option value="0">Chọn khóa học</option>
+                <option value="1">Javascript cơ bản</option>
+                <option value="2">javascript nâng cao</option>
+                <option value="3">Reactjs</option>
+            </select>
+            <div class="error_mess"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Giá khóa học</label>
+            <input type="text" id="price" placeholder="Giá" disabled>
+            <div class="error_mess"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Số lượng</label>
+            <input type="number" id="soluong" placeholder="0" min="0">
+            <div class="error_mess"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Tổng tiền</label>
+            <input type="text" id="money" placeholder="0" disabled>
+            <div class="error_mess"></div>
+        </div>
+        <div class="button">
+            <button type="submit">Đăng ký</button>
+        </div>
+        </form>
+    </div>
+    <script src="../js/bai3.js"></script>
+</body>
+</html>

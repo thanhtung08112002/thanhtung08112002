@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loi .thongbaoloi {
+            color: red;
+        }
+        .loi input{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" onsubmit="return form()">
+        <div class="group_form">
+            <h2>Đăng ký khóa học online</h2>
+        </div>
+        <div class="group_form">
+            <label for="">Họ tên</label>
+            <input type="text"  id="username" placeholder="Họ tên"><br>
+            <div class="thongbaoloi"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Điện thoại</label>
+            <input type="text"  id="phone" placeholder="Điện thoại"><br>
+            <div class="thongbaoloi"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Mật khẩu</label>
+            <input type="text"  id="pass" placeholder="Mật khẩu"><br>
+            <div class="thongbaoloi"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Chọn khóa học</label>
+            <select name="" id="chon" >
+                <option value="0">Chọn khóa học</option>
+                <option value="1">js cơ bản</option>
+                <option value="2">js nâng cao</option>
+                <option value="3">Reactjs</option>
+            </select>
+            <div class="thongbaoloi"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Giá</label>
+            <input type="text"  id="gia" placeholder="Giá" disabled><br>
+            <div class="thongbaoloi"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Số lượng</label>
+            <input type="number"  id="soluong" placeholder="0" min="0"><br>
+            <div class="thongbaoloi"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Tổng tiền</label>
+            <input type="text"  id="tien" placeholder="0" disabled><br>
+            <div class="thongbaoloi"></div>
+        </div>
+        <div class="button">
+            <button type="submit">Đăng ký</button>
+        </div>
+        </form>
+    </div>
+    <script src="../js/js.js"></script>
+</body>
+</html>

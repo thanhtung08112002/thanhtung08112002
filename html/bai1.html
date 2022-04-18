@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 400px;
+            margin: 20px auto;
+
+        }
+        .img{
+            margin-bottom: 10px;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        .button{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+        }
+        button{
+            width:85px;
+            height: 30px;
+            border: none;
+            background-color: rgb(0, 60, 255);
+            color: white;
+            font-weight: b;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(0, 132, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="../img/img1.jpg" alt="" id="img" onmouseover="handle()" onmouseout="out()">
+        </div>
+        <div class="button">
+            <button onclick="hide()">Hide</button>
+            <button onclick="show()">Show</button>
+        </div>
+    </div>
+    <script src="../js/bai1.js"></script>
+</body>
+</html>

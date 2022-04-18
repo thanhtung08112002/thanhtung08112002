@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 300px;
+            margin: 20px auto;
+            border: 2px solid red;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .group_form{
+            margin-bottom: 5px;
+        }
+        input{
+            margin-left: 30px;
+        }
+        .error_mess{
+            text-align: center;
+            margin-left: 80px;
+        }
+        .button{
+            text-align: center;
+            margin-left: 65px;
+        }
+        .invalid input{
+            border: 1px solid red;
+        }
+        .invalid .error_mess{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" onsubmit="return form()">
+        <div class="group_form">
+            <label for="">Họ tên</label>
+            <input type="text" id="username" style="margin-left: 52px;" size="15"><br>
+            <div class="error_mess"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Ngày sinh</label>
+            <input type="date" id="date"><br>
+            <div class="error_mess"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Giới tính</label>
+            <input type="radio" class="gender" name="gender" style="margin-left: 40px;">Nam 
+            <input type="radio" class="gender" name="gender">Nữ<br>
+            <div class="error_mess"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Chức vụ</label>
+            <select name="" id="choose" style="margin-left: 40px;">
+                <option value="0">Chọn chức vụ</option>
+                <option value="1">Giám đốc</option>
+                <option value="2">Trưởng phòng</option>
+                <option value="3">Nhân viên</option>
+            </select><br>
+            <div class="error_mess"></div>
+        </div>
+        <div class="group_form">
+            <label for="">Lương</label>
+            <input type="text"  id="money" disabled style="margin-left: 50px;" size="15" >
+            <div class="error_mess"></div>
+        </div>
+        <div class="button">
+            <button type="submit">Chấp nhận</button>
+            <button onclick="reset()">Nhập lại</button>
+        </div>
+        </form>
+    </div>
+    <script src="../js/bai2.js"></script>
+</body>
+</html>
