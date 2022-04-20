@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            margin: auto
+        }
+        .group_form{
+            margin-bottom: 10px;
+        }
+        h2{
+            margin-left: 70px;
+        }
+        input{
+            outline: none;
+        }
+        input:hover{
+            border: 1px solid aqua;
+        }
+        .button {
+            margin-left: 100px;
+        }
+        button{
+            border: none;
+            background-color: rgb(0, 17, 255);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100px;
+            border-radius: 10px;
+            height: 30px;
+        }
+        button:hover{
+            background-color: rgb(0, 136, 255);
+        }
+        .invalid .error_mess{
+            color: red;
+        }
+        .invalid input{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" onsubmit="return form()">
+        <div class="group_form">
+            <h2>HÓA ĐƠN</h2>
+        </div>
+        <div class="group_form">
+            <label for="">Khách hàng</label>
+            <input type="text" id="customer">
+            <span class="error_mess"></span>
+        </div>
+        <div class="group_form">
+            <label for="">Loại hàng</label>
+            <select name="" id="quality">
+                <option value="0">Chọn loại</option>
+                <option value="1">Loại 1</option>
+                <option value="2">Loại 2</option>
+                <option value="3">Loại 3</option>
+            </select>
+            <span class="error_mess"></span>
+        </div>
+        <div class="group_form">
+            <label for="">Đơn giá</label>
+            <input type="text" id="price" disabled>
+            <span class="error_mess"></span>
+        </div>
+        <div class="group_form">
+            <label for="">Số lượng</label>
+            <input type="number" id="quantity" min="0">
+            <span class="error_mess"></span>
+        </div>
+        <div class="group_form">
+            <label for="">Thành tiền</label>
+            <input type="text" id="money" disabled>
+            <span class="error_mess"></span>
+        </div>
+        <div class="group_form">
+            <label for="">Nơi nhận hàng</label>
+            <input type="radio" name="gender">Nội thành
+            <input type="radio" name="gender" >Ngoại thành
+            <span class="error_mess"></span>
+        </div>
+        <div class="group_form">
+            <label for="">Phí vận chuyển</label>
+            <input type="text" id="cost" disabled placeholder="30000">
+            <span class="error_mess"></span>
+        </div>
+        <div class="button">
+            <button type="submit">ĐẶT MUA</button>
+        </div>
+        </form>
+    </div>
+    <script src="./bai2.js"></script>
+</body>
+</html>
